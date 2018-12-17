@@ -1,0 +1,12 @@
+type = "line-corpus"
+store-full-text = true
+stop-words = "lemur-stopwords.txt"
+metadata = [{name = "venue_name", type = "string"},
+            {name = "review_id", type = "string"},
+            {name = "review_title", type = "string"},
+            {name = "review_date", type = "string"},
+            {name = "rating", type = "uint"},
+            {name = "helpful_vote", type = "uint"},
+            {name = "contributions", type = "uint"},
+            {name = "uid", type = "string"},
+            {name = "user_location", type = "string"}]

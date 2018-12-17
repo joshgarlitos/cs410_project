@@ -1,0 +1,23 @@
+# Data sets are looked at starting from this location
+prefix = "."
+
+dataset = "3b" # Change this to the dataset name that you want to query
+corpus = "line.toml"
+index = "idx"
+uninvert = true
+
+[[analyzers]]
+method = "ngram-word"
+ngram = 1
+	[[analyzers.filter]]
+		type = "icu-tokenizer"
+		suppress-tags = true
+	[[analyzers.filter]]
+		type = "lowercase"
+	[[analyzers.filter]]
+		type = "list"
+		method = "reject"
+		file = "lemur-stopwords.txt"
+	[[analyzers.filter]]
+		type = "porter2-filter"
+
