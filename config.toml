@@ -1,7 +1,7 @@
 # Data sets are looked at starting from this location
 prefix = "."
 
-dataset = "3b" # Change this to the dataset name that you want to query
+dataset = "uo_wide" # Change this to the dataset name that you want to query
 corpus = "line.toml"
 index = "idx"
 uninvert = true
@@ -20,4 +20,3 @@ ngram = 1
 		file = "lemur-stopwords.txt"
 	[[analyzers.filter]]
 		type = "porter2-filter"
-
